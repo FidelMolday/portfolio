@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03f6c6393a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Menu Tab and Logo at top Using HTML -->
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+        <script src="ext.js" language = "javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </header>
+
+    <main>
+        <!-- Banner Layout in HTML -->
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>Hello, I'm <br> <span> Patrick Kabuga M.</span></h2>
+                <h3>I'm A Front-End Web Developer</h3>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+        </section>
+
+        <!-- About Me Layout in HTML -->
+        <section class="about" id="about">
+            <div class="heading">
+                <p>Get to Know Me</p>
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="w50">
+                    <img src="images/blackwalltemp.jpg" alt="" class="propic" width="300px">
+                    <!-- <img src="https://images.pexels.com/photos/5952708/pexels-photo-5952708.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="propic"> -->
+                </div>
+                <div class="contentBx w50">
+                    <h3>Who am I?</h3>
+                    <h2>I'm <b>Patrick Kabuga M.</b>, a computer science undergraduate and a web developer.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum commodi quidem illo voluptatum, laboriosam provident itaque tenetur ratione nobis ad, iure vero ipsam nulla impedit autem eligendi? Dolores magnam modi molestias incidunt, rem nam hic earum facilis, assumenda ut officia quis aliquid veniam sunt et doloribus voluptatibus ipsa. Ut?</p>   <br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At mollitia aperiam ratione temporibus pariatur quos similique, iste, itaque obcaecati facilis aliquid, dolor deserunt reiciendis possimus unde aut minima? Nisi accusamus itaque, exercitationem vero voluptatibus cupiditate hic repellendus id architecto repellat aspernatur qui tempore vitae eos laboriosam voluptatum,hsa Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, excepturi?
+                    </p>
+                    <div class="heading bottom">
+                        <a href="#" target="_blank" class="btn round">
+                            Download CV
+                        </a>
+                        <div class="bt">
+                            <b>Name:</b> Patrick Kabuga M.
+                            <br>
+                            <b>Age:</b> 18
+                        </div>
+                        <div class="bt">
+                            <b>E-mail:</b> kabugap02@gmail.com
+                            <br>
+                            <b>Location:</b> KENYA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Creating Services Layout in HTML -->
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>My Services</h2>
+                <p>Services I offer to my clients</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <i class="fa fa-css3 fa-4x"></i>
+                    <h3>Web Design CSS</h3>
+                    <p>I am quite confident in my CSS skills, I've done some projects and I can safely say that I know my way around it.</p>
+                </div>
+                <div class="servicesBx">
+                    <i class="fa fa-html5 fa-4x"></i>
+                    <h3>HTML Developer</h3>
+                    <p>This is one easy to learn and one of my best languages to manipulate. I can use HTML, to my structure web pages.</p>
+                </div>
+                <div class="servicesBx">
+                    <i class="fa fa-drupal fa-4x"></i>
+                    <h3>Drupal Developer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio, cum quos expedita ipsa minima.</p>
+                </div>
+                <div class="servicesBx">
+                    <i class="fa fa-gamepad fa-4x"></i>
+                    <h3>Gamer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio, cum quos expedita ipsa minima.</p>
+                </div>
+                <div class="servicesBx">
+                    <i class="fa fa-git fa-4x"></i>
+                    <h3>Git Developer</h3>
+                    <p>Every Web Developer needs to know at least a version control language, and I happen to understand git.</p>
+                </div>
+                <div class="servicesBx">
+                    <i class="fa fa-cart-arrow-down fa-4x"></i>
+                    <h3>E-commerce Project</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio, cum quos expedita ipsa minima.</p>
+                </div>
+            </div>
+        </section>
+    <!-- Creating  A Work Layout in HTML -->
+<section class="work" id="work">
+    <div class="heading">
+        <h2>My Latest Works</h2>
+        <p>Showcasing some of my <b>Projects</b> </p>
+    </div>
+    <div class="content">
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/quiz-app.jpg" alt="" width="150" height="150">
+                <p>My HTML Quiz App</p>
+            </a>
+        </div>
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/survey.jpg" alt="" width="150" height="150">
+                <p>My Survey Project</p>
+            </a>
+        </div>
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/Tribute.jpg" alt="" width="150" height="150">
+                <p>My Tribute Page</p>
+            </a>
+        </div>
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/e-commerce.jpg" alt="" width="150" height="150">
+                <p>My E-commerce Website</p>
+            </a>
+        </div>
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/login.jpg" alt="" width="150" height="150">
+                <p>My Login Project</p>
+            </a>
+        </div>
+        <div class="workBx">
+            <a href="#" target="_blank">
+                <img src="images/music.jpg" alt="" width="150" height="150">
+                <p>My Music Store Project</p>
+            </a>
+        </div>
+        <div class="heading">
+            <a href="#" target="_blank" class="btn" style="color: #fff;">View All My Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Creating Testimonial Layout in HTML -->
+    <section class="testimonial" id="testimonials">
+        <div class="heading white">
+            <h2>Testimonials</h2>
+            <p>What my clients think about me</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>
+                    Patrick did an excellent creative job, addressing our requests quickly, and also providing his own graphic insight, being open to feedback and changes or edits when they arose. He worked with us the entire way. Highly recommended
+                </p>
+                <h3>John Doe <br> Creative Designer</h3>
+            </div>
+            <div class="testimonialBx">
+                <p>
+                    I've been Searching for a good portfolio Website done using html & css. This is definitely the one simple about myself with Responsive design. Thanks Praveen
+                </p>
+                <h3>Jane Doe <br> Web Designer (google)</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Contact Layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytime</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available for freelance work if the right project<br> comes along, Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Lorem, ipsum. <br> Lorem</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>0797162754322</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>kabugap02@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="Full Name">
+                    <input type="email" placeholder="Email" name="E-mail">
+                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="Message">
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Creating Footer Layout in HTML -->
+
+    <footer class="copyright">
+        <p>&copy;2020, Mywebsite.com, Allrights reserved</p>
+    </footer>
+   
+</body>
+</html>
