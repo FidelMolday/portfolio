@@ -54,61 +54,66 @@ section {
     font-weight: 500;
     font-size: 18px;
 }
-/* Creating About me Layout in CSS */
-.heading {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #111;
-}
-.heading p {
-    font-style: italic;
-    font-size: 14px;
-}
-.heading h2 {
-    font-size: 3em;
-    color: #009e66;
-}
-.content {
-    display: flex;
-    flex-direction: row;
+  /* Creating About Layout */
+  .content{
+    display:flex;
     justify-content: space-between;
 }
-.contentBx {
-    padding-left: 40px;
+.heading{
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#111;
+}
+.heading p{
+    font-style: italic;
+    font-size:14px;
+}
+.heading h2{
+    font-size: 3em;
+    color:#009e66
+}
+.contentBx{
+    padding-left:40px;
     text-align: justify;
 }
-.propic {
-    width: 300px;
-    height: 350px;
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    
-}
-.contentBx h2 {
+.contentBx h2{
     font-weight: 300;
     margin-bottom: 10px;
 }
-.heading.bottom {
-    display: flex;
+.proPic{
+    width:300px;
+    height:350px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.heading.bottom{
+    display:flex;
     justify-content: space-between;
+    flex-direction:row;
     align-items: center;
 }
-.bt {
-    margin-top: 30px;
+.btn.round{
+   border-radius:50px;    ;
+   -webkit-border-radius:50px    ;
+   -moz-border-radius:50px    ;
+   -ms-border-radius:50px    ;
+   -o-border-radius:50px    ;
 }
-.w50 {
-    min-width: 25%;
+.info{
+    display:flex;
+    justify-content: space-between;
 }
-img {
-    min-width: 100%;
+.bt{
+    margin-top: 20px;;
 }
-.w50 img {
-    max-width: 100%;
+.w50{
+    min-width:25%;
 }
-.btn.round {
-    border-radius: 50px;
+img{
+    max-width:100%;
 }
+
 
 
 /* Creating Logo and Menu's Header  */
@@ -190,42 +195,46 @@ header.sticky ul li a {
     color: #009e66;
 }
 
-/* Designing Work Layout In CSS */
-.work .content {
-    display: flex;
+/* Creating Work Layout in CSS */
+.work .content{
+    display:flex;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap:wrap;
+    flex-direction:row;
 }
-.work .content .workBx {
-    width: 500px;
-    padding: 20px;
-    
+.work .content .workBx{
+    width:500px;
+    padding:20px;
 }
-.work .content .workBx img {
-    max-width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+.work .content .workBx img{
+    max-width:100%;
+    border:1px solid rgba(0,0,0,0.4);
+    cursor:pointer;
 }
-.work .content .workBx:hover {
-    box-shadow: 0 0 20px 5px #ccc;
-    transform: scale(1.008);
-    -webkit-transform: scale(1.008);
-    -moz-transform: scale(1.008);
-    -ms-transform: scale(1.008);
-    -o-transform: scale(1.008);
-    transition: 00.5s;  
+.work .content .workBx img:hover{
+    box-shadow:0 0 20px 5px #ccc;
+    transform:scale(1.008);
+    -webkit-transform:scale(1.008);
+    -moz-transform:scale(1.008);
+    -ms-transform:scale(1.008);
+    -o-transform:scale(1.008);
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
 }
-.work .content .workBx p {
-    text-align: center;
-    
+.work .content .workBx p{
+    text-align:center;
 }
 .work .content .workBx a:link,
-.work.content .workBx a:visited,
-.work .content .workBx a:active {
-    color: #161616;
+.work .content .workBx a:visited,
+.work .content .workBx a:active{
+    color:#161616;
     text-decoration: none;
     font-weight: 600;
 }
+
 
 /* Designing Testimonial Layout in CSS */
 .testimonial {
