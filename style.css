@@ -14,7 +14,7 @@ section {
 /* Creating Banner Area In CSS */
 .banner {
     position: relative;
-    min-height: 1oovh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
