@@ -27,7 +27,7 @@ section {
     background-position:right center;
 }
 .banner h2 {
-    font-size: 2.5em;
+    font-size: 4.2em;
     color: rgb(168, 166, 166);
     font-weight: 300;
     line-height: 1.5em;
@@ -36,11 +36,7 @@ section {
     font-size: 1.2em;
     color: #efefef;
 }
-.banner h3 {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 500;
-}
+
 .btn {
     position: relative;
     background-color: #009e66;
@@ -519,6 +515,18 @@ footer.copyright {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .banner h2 {
+        font-size: 3.2em;
+        color: rgb(168, 166, 166);
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    .banner h2 span {
+        font-size: 1.2em;
+        color: #efefef;
+    }
+}
 
 @media (max-width: 768px){
     .testimonial .content .testimonialBx{
@@ -531,6 +539,16 @@ footer.copyright {
         justify-content: space-between;
         align-items: center;
         flex-direction:row;
+    }
+    .banner h2 {
+        font-size: 2.2em;
+        color: rgb(168, 166, 166);
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    .banner h2 span {
+        font-size: 1.2em;
+        color: #efefef;
     }
 }
 
