@@ -603,6 +603,22 @@ footer.copyright {
         align-items: center;
         flex-direction:column;
     }
+        /* Creating Sticky Header Menu Nav Bar in CSS */
+    header.sticky {
+        background-color: #fff ;
+        padding: 20px 70px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        
+    }
+}
+@media (max-width: 600px) {
+        /* Creating Sticky Header Menu Nav Bar in CSS */
+        header.sticky {
+            background-color: #fff ;
+            padding: 20px 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            
+        }
 }
 
 
