@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-*{
+:root {
+    --theme-color: #009e66;
+    --btn-hover-color: rgba(0, 158, 102, 0.5);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
+
 
 /* Adding All My Section Tag Fixed Padding */
 section {
@@ -19,8 +27,7 @@ section {
     justify-content: space-between;
     align-items: center;
     background-color: #111;
-    background-image: url('images/deer.jpeg');
-    /* background-image: url('https://images.pexels.com/photos/8954101/pexels-photo-8954101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-image: url('images/background.png');
     /* background-image: url('https://images.pexels.com/photos/3702967/pexels-photo-3702967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
     /* background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
     background-size: cover;
@@ -39,7 +46,7 @@ section {
 
 .btn {
     position: relative;
-    background-color: #009e66;
+    background-color: var(--theme-color);
     display: inline-block;
     color: #000;
     margin-top: 4%;
@@ -67,15 +74,20 @@ section {
 }
 .heading h2{
     font-size: 3em;
-    color:#009e66
+    color:var(--theme-color);
 }
 .contentBx{
     padding-left:40px;
     text-align: justify;
+    position: relative;
 }
 .contentBx h2{
     font-weight: 300;
     margin-bottom: 10px;
+}
+.contentBx h2 span {
+    color: var(--theme-color);
+    font-weight: 700;
 }
 .proPic{
     width:300px;
@@ -95,6 +107,20 @@ section {
    -moz-border-radius:50px    ;
    -ms-border-radius:50px    ;
    -o-border-radius:50px    ;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 var(--btn-hover-color);
+    transform: translateY(-0.1rem);
+    transition: transform 0.3s;
+    -webkit-transform: translateY(-0.1rem);
+    -moz-transform: translateY(-0.1rem);
+    -ms-transform: translateY(-0.1rem);
+    -o-transform: translateY(-0.1rem);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
 }
 .info{
     display:flex;
@@ -184,11 +210,11 @@ header.sticky ul li a {
     max-width: 360px;
 }
 .services .content .servicesBx:hover {
-    border-bottom: 2px solid #009e66;
+    border-bottom: 2px solid var(--theme-color);
     cursor: pointer;
 }
 .services .content .servicesBx .fa {
-    color: #009e66;
+    color: var(--theme-color);
 }
 
 /* Creating Work Layout in CSS */
@@ -260,7 +286,7 @@ header.sticky ul li a {
     line-height: 24px;
 }
 .testimonial .content .testimonialBx h3 {
-    color: #009e66;
+    color: var(--theme-color);
     margin-top: 40px;
     text-align: right;
     font-weight: 200;
@@ -270,7 +296,7 @@ header.sticky ul li a {
     font-size: 20px;
 }
 .testimonial .content .testimonialBx:hover {
-    border-bottom: 2px solid #009e66;
+    border-bottom: 2px solid var(--theme-color);
 }
 
 /* Designing  Contact Details Layout in CSS */
@@ -318,7 +344,7 @@ header.sticky ul li a {
     color:#999;
 }
 .formBx form input[type="submit"]{
-    background:#009e66;
+    background:var(--theme-color);
     max-width:250px;
     cursor:pointer;
     font-weight: 600;
@@ -361,7 +387,7 @@ header.sticky ul li a {
 }
 .contactInfoBx .box .text h3{
     font-weight: 500;
-    color:#009e66;
+    color:var(--theme-color);
     margin-bottom: 0;
 }
 .contactInfoBx .box .text p{
@@ -375,10 +401,23 @@ header.sticky ul li a {
     padding-left:60px;
 }
 .contactInfoBx .boxSocial .fa{
-    color:#009e66;
+    color:var(--theme-color);
     font-size: 42px;
     cursor:pointer;
-    
+}
+.boxSocial .icon:hover {
+    cursor: pointer;
+    transform: translateY(-0.29rem);
+    transition: transform 200ms;
+    -webkit-transform: translateY(-0.29rem);
+    -moz-transform: translateY(-0.29rem);
+    -ms-transform: translateY(-0.29rem);
+    -o-transform: translateY(-0.29rem);
+
+    -webkit-transition: transform 200ms;
+    -moz-transition: transform 200ms;
+    -ms-transition: transform 200ms;
+    -o-transition: transform 200ms;
 }
     /* Designing Footer Layout in CSS */
 footer.copyright {
@@ -567,6 +606,69 @@ footer.copyright {
 }
 
 
+
+/** 
+ * ===================================================================
+ * 04. preloader - (_preloader-1.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ /* #preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #151515;
+	z-index: 800;
+	height: 100%;
+	width: 100%;
+}
+.no-js #preloader, .oldie #preloader {
+	display: none;
+}
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	padding: 0;
+}
+#loader:before {
+	content: "";
+	border-top: 11px solid rgba(255, 255, 255, 0.1);
+	border-right: 11px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
+	border-left: 11px solid #FF0077;
+	-webkit-animation: load 1.1s infinite linear;
+	animation: load 1.1s infinite linear;
+	display: block;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+@-webkit-keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+} */
 
 
 

@@ -35,19 +35,10 @@
         <!-- Banner Layout in HTML -->
         <section class="banner" id="home">
             <div class="textBx">
-                <h2>Hello, <br> <span class="auto-input"></span></h2>
+                <h2><span>Hello, I'm Patrick Kabuga.</span><br> <i class="auto-input"></i></h2>
                 <a href="#about" class="btn">About Me</a>
             </div>
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            let typed = new Typed(".auto-input", {
-                strings: ["I'm Patrick Kabuga M.", "a FrontEnd Web Developer,", "and also a Computer Science Student."],
-                typeSpeed: 150,
-                backSpeed:100,
-                loop:true
-            });
-        </script>
         <!-- Creating About Me Layout in HTML -->
     <section class="about" id="about">
         <div class="heading">
@@ -60,19 +51,20 @@
             </div>
             <div class="contentBx w50">
                 <h3>Who am i?</h3>
-                <h2>I'm <b>Patrick Kabuga Murimi</b>, a computer science undergraduate and a Front End Web Developer</h2>
-                <p>I am adept at front end web programming languages, such as HTML, CSS and JavaScript. Also having knowledge of frameworks such as bootstrap 3, and 4 and version control language git. Being a malleable learner, I am open to learning all which will be of benefit to me.</p><br>
-                <p>I am a freelancer from KENYA and i have been building noteworthy UX/UI designs and websites for months now, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+                <h2>I'm <b>Patrick Kabuga Murimi</b>, <span class="auto-text"></span></h2>
+                <p>I am adept at front end web programming languages, such as HTML, CSS and JavaScript. Also having knowledge of frameworks such as bootstrap 3, and 4 and version control language git. Being a malleable learner, I am open to learning all which will be of benefit to me.<br>
+                I am a freelancer from KENYA and i have been building noteworthy UX/UI designs and websites for months now, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.
+                </p>
                 <div class="heading bottom">
-                    <a href="#" class="btn round">Download CV</a>
                     <div class="bt">
-                        <b>Name:</b> Patrick Kabuga M.<br>
-                        <b>Age:</b> 18
+                        <b><i class="fa fa-book-reader"></i> Study:</b> University of Eldoret.<br>
+                        <b><i class="fa fa-calendar"></i> Age:</b> 18 <br>
                     </div>
                     <div class="bt">
-                        <b>Email:</b> kabugap02@gmail.com<br>
-                        <b>Location:</b> KENYA
+                        <b><i class="fa fa-envelope"></i> Email:</b> kabugap02@gmail.com<br>
+                        <b><i class="fa fa-map-marker"></i> Location:</b> KENYA
                     </div>
+                    <a href="images/developer.jpeg" target="_blank" download="CV"><span class="btn round">Download CV</span></a>
                 </div>
             </div>
         </div>
@@ -86,12 +78,12 @@
             <div class="content">
                 <div class="servicesBx">
                     <i class="fa fa-css3 fa-4x"></i>
-                    <h3>Web Design CSS</h3>
-                    <p>I am quite confident in my CSS skills, I've done some projects and I can safely say that I know my way around it.</p>
+                    <h3>Responsive Web Design</h3>
+                    <p>I am quite confident in my skills, I've done some projects and I can safely say that I know my way around it.</p>
                 </div>
                 <div class="servicesBx">
                     <i class="fa fa-html5 fa-4x"></i>
-                    <h3>HTML Developer</h3>
+                    <h3>FrontEnd Web Developer</h3>
                     <p>This is one easy to learn and one of my best languages to manipulate. I can use HTML, to my structure web pages.</p>
                 </div>
                 <div class="servicesBx">
@@ -253,7 +245,7 @@
                     <input type="text" placeholder="Full Name" name="Full Name">
                     <input type="email" placeholder="Email" name="E-mail">
                     <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message">
+                    <input type="submit" class="btn" value="Send Message">
                 </form>
             </div>
         </div>
@@ -265,7 +257,32 @@
     <footer class="copyright">
         <p>&copy;2021, Mywebsite.com, Allrights reserved</p>
     </footer>
-<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- <div id="preloader"> 
+    	<div id="loader"></div>
+   </div>  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            let typed = new Typed(".auto-input", {
+                strings: [ "a FrontEnd Web Developer,", "a Freelancer,", "a Web Designer,", "a Computer Science Student."],
+                typeSpeed: 50,
+                backSpeed:30,
+                loop:true,
+                backDelay: 2100,
+                showCursor: true,
+                cursorChar: '|',
+            });
+            let typed2 = new Typed(".auto-text", {
+                strings: [ "a FrontEnd Web Developer,", "a Freelancer,", "a Web Designer,", "a Computer Science Student."],
+                typeSpeed: 50,
+                backSpeed:30,
+                loop:true,
+                backDelay: 2100,
+                showCursor: true,
+                cursorChar: '|',
+            });
+        </script>
+ <script src="ext.js"></script>
+ <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
