@@ -482,7 +482,7 @@ footer.copyright {
     .toggle {
         width: 40px;
         height: 40px;
-        background-image:url('images/white-menu-icon.png');
+        background-image:url('images/menu.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
@@ -491,7 +491,7 @@ footer.copyright {
     .toggle.active {
         width: 40px;
         height: 40px;
-        background-image:url('images/white-close-menu-icon.png');
+        background-image:url('images/close.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
