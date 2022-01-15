@@ -140,22 +140,26 @@ img{
 
 /* Creating Logo and Menu's Header  */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    padding: 40px 100px;
-    display: flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.5s;
+    z-index: 2;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
 }
 header .logo {
-    color: #fff;
-    text-decoration: none;
+    color:#fff;
+    font-size:24px;
     text-transform: uppercase;
-    font-size: 24px;
+    text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -177,13 +181,15 @@ header ul li a {
 
 /* Creating Sticky Header Menu Nav Bar in CSS */
 header.sticky {
-    background-color: #fff ;
+    background: #fff ;
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     
 }
 
-header.sticky .logo,
+header.sticky .logo {
+    color: #111;
+}
 header.sticky ul li a {
     color: #111;
 }
@@ -429,7 +435,7 @@ footer.copyright {
 
 /* Making Responsive Layout */
 @media (max-width: 991px) {
-    header, header .sticky {
+    header, header.sticky {
         padding: 20px 50px;
         z-index: 2;
     }
@@ -438,17 +444,21 @@ footer.copyright {
         z-index: 1;
     }
     header .menu {
-        position: fixed;
-        background-color: #fff;
-        display: block;
-        top: 76.8px;
-        left: -100% ;
-        transition: 0.5s;
-        padding: 100px 50px;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        position:fixed;
+        background:#fff;
+        display:block;
+        top:76.8px;
+        left:-100%;
+        padding:100px 50px;
+        width:100%;
+        height:100vh;
+        border-top:1px solid rgba(0,0,0,0.2);
+        text-align:center;
+        transition:0.5s;
+        -webkit-transition:0.5s;
+        -moz-transition:0.5s;
+        -ms-transition:0.5s;
+        -o-transition:0.5s;
     }
     header .menu.active {
         position: fixed;
@@ -603,23 +613,8 @@ footer.copyright {
         align-items: center;
         flex-direction:column;
     }
-        /* Creating Sticky Header Menu Nav Bar in CSS */
-    header.sticky {
-        background-color: #fff ;
-        padding: 20px 70px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        
-    }
 }
-@media (max-width: 600px) {
-        /* Creating Sticky Header Menu Nav Bar in CSS */
-        header.sticky {
-            background-color: #fff ;
-            padding: 20px 50px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            
-        }
-}
+
 
 
 
