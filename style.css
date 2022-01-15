@@ -613,6 +613,9 @@ footer.copyright {
         align-items: center;
         flex-direction:column;
     }
+    .contentBx span {
+        display: inline-block;
+    }
 }
 
 
