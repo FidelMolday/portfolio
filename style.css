@@ -477,6 +477,34 @@ footer.copyright {
     padding: 10px;
 }
 
+/* Designing Scroll to top button */
+.move-top {
+    top: 50vh;
+    opacity:0;
+    right: 5vw;
+    width: 50px;
+    z-index: 99;
+    height: 50px;
+    display: block;
+    position: fixed;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.move-top img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    background-color: #27ae60;
+}
+
 /* Making Responsive Layout */
 @media (max-width: 991px) {
     header, header.sticky {
