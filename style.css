@@ -693,7 +693,7 @@ footer.copyright {
 /* preloader */
 #preloader {
     background: #000 url("images/loader.gif") no-repeat center;
-    background-size: 25%;
+    background-size: 45%;
     height: 100vh;
     width: 100%;
     position: fixed;
