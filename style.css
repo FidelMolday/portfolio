@@ -532,7 +532,7 @@ footer.copyright {
         -ms-transition:0.5s;
         -o-transition:0.5s;
     }
-    header .menu.active {
+    header .menu.scroll {
         position: fixed;
         background-color: #fff;
         display: block;
@@ -560,7 +560,7 @@ footer.copyright {
         background-size: 30px;
         cursor: pointer;
     }
-    .toggle.active {
+    .toggle.scroll {
         width: 40px;
         height: 40px;
         background-image:url('images/close.png');
@@ -698,4 +698,9 @@ footer.copyright {
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+/* Changed font weight of "I'm" */
+#myName > b {
+    font-weight: normal;
 }

@@ -7,8 +7,8 @@ function toggleMenu() {
     var menuToggle = document.querySelector(".toggle");
     var menu = document.querySelector(".menu");
 
-    menuToggle.classList.toggle("active");
-    menu.classList.toggle("active");
+    menuToggle.classList.toggle("scroll");
+    menu.classList.toggle("scroll");
 }
 // Scroll top button
 window.addEventListener("scroll", () => {
@@ -30,7 +30,20 @@ window.addEventListener("load", () => {
 })
 
 
+// Changes Display in about me auto-typing on window resizing
+let Hello = document.getElementById("myName");
 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      Hello.style.display = "block";
+    } else {
+      Hello.style.display = "inline-block";
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 603px)")
+  myFunction(x) // Call listener function at run time
+  x.addEventListener("change", myFunction) // Attach event listener function on state changes
 
 
 
