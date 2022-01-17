@@ -241,6 +241,7 @@ header ul li a {
 
 .nav-link:hover {
     color: var(--theme-color);
+    font-weight: bold;
 }
 
 .nav-link:hover::before {
