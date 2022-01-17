@@ -24,14 +24,15 @@ window.addEventListener("scroll", () => {
         moveTopButton.style.right = "5vw";
     }
 });
-const loader = document.getElementById("preloader");
+// Preloader
+var loader = document.getElementById("preloader");
 window.addEventListener("load", () => {
     loader.style.display = "none";
 })
 
 
 // Changes Display in about me auto-typing on window resizing
-let Hello = document.getElementById("myName");
+var Hello = document.getElementById("myName");
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
@@ -45,5 +46,18 @@ function myFunction(x) {
   myFunction(x) // Call listener function at run time
   x.addEventListener("change", myFunction) // Attach event listener function on state changes
 
+//   Adding active classes to menu that will change on scrolling
+
+var li = document.querySelectorAll(".nav-item");
+var section = document.querySelectorAll("section");
+
+function activeMenu() {
+    let length = section.length;
+    while(--length && window.scrollY + 97 < section[length].offsetTop) {}
+        li.forEach(ltx => ltx.classList.remove("active"));
+        li[length].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);
 
 

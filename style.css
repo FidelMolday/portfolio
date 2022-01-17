@@ -683,6 +683,10 @@ footer.copyright {
     .contactInfo{
         margin:10px 0;
     }
+    .active {
+        border: none;
+        background-color: var(--theme-color);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -752,4 +756,9 @@ footer.copyright {
 /* Changed font weight of "I'm" */
 #myName > b {
     font-weight: normal;
+}
+
+/* Active class */
+.active {
+    border-bottom: 5px solid var(--theme-color);
 }
