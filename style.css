@@ -29,7 +29,7 @@ section {
     background-color: #111;
     background-image: url('images/background.png');
     background-size: cover;
-    background-position:right center;
+    background-position:center;
 }
 .banner h2 {
     font-size: 4.2em;
