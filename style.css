@@ -300,7 +300,9 @@ header.sticky ul li a {
 .services .content .servicesBx .fa {
     color: var(--theme-color);
 }
-
+.services .content .servicesBx h3 {
+    margin-top: 3px;
+}
 /* Creating Work Layout in CSS */
 .work .content{
     display:flex;
