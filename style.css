@@ -46,7 +46,7 @@ section {
     position: relative;
     background: none;
     display: inline-block;
-    color: #fff;
+    color: #000;
     margin-top: 4%;
     padding: 10px 30px;
     text-decoration: none;
@@ -97,6 +97,7 @@ section {
 }
 .abt {
     border: 4px solid var(--theme-color);
+    color: #fff;
 }
   /* Creating About Layout */
   .content{
