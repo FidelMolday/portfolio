@@ -321,11 +321,11 @@ header.sticky ul li a {
 }
 .work .content .workBx img:hover{
     box-shadow:0 0 20px 5px #ccc;
-    transform:scale(1.008);
-    -webkit-transform:scale(1.008);
-    -moz-transform:scale(1.008);
-    -ms-transform:scale(1.008);
-    -o-transform:scale(1.008);
+    transform:scale(1.058);
+    -webkit-transform:scale(1.058);
+    -moz-transform:scale(1.058);
+    -ms-transform:scale(1.058);
+    -o-transform:scale(1.058);
     transition:0.5s;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
@@ -561,6 +561,26 @@ footer.copyright {
     background-color: #27ae60;
 }
 
+/* preloader */
+#preloader {
+    background: #000 url("images/loader.gif") no-repeat center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* Changed font weight of "I'm" */
+#myName > b {
+    font-weight: normal;
+}
+
+/* Active class */
+.active {
+    border-bottom: 5px solid var(--theme-color);
+}
+
 /* Making Responsive Layout */
 @media (max-width: 991px) {
     header, header.sticky {
@@ -750,22 +770,3 @@ footer.copyright {
     }
 }
 
-/* preloader */
-#preloader {
-    background: #000 url("images/loader.gif") no-repeat center;
-    background-size: 45%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-
-/* Changed font weight of "I'm" */
-#myName > b {
-    font-weight: normal;
-}
-
-/* Active class */
-.active {
-    border-bottom: 5px solid var(--theme-color);
-}
