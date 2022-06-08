@@ -131,6 +131,14 @@ section {
     color: var(--theme-color);
     font-weight: 700;
 }
+.contentBx h2#hdSkills {
+    margin-left: 35%;
+    margin-top: 10px;
+}
+.contentBx div#skills{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 .proPic{
     width:300px;
     height:350px;
