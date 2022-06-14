@@ -776,5 +776,9 @@ footer.copyright {
     .contentBx span {
         display: inline-block;
     }
+    .contentBx div#skills{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
