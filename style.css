@@ -779,7 +779,9 @@ footer.copyright {
     .contentBx div#skills{
         display: grid;
         grid-template-columns: repeat(2, auto);
-        column-gap: 1.5rem;
+    }
+    .contentBx div#skills .secondRow {
+        margin-right: -5rem;
     }
 }
 
