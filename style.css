@@ -90,7 +90,7 @@ section {
     -moz-transition: transform 0.3s;
     -ms-transition: transform 0.3s;
     -o-transition: transform 0.3s;
-    background-color: #000;
+    background-color: #0000;
 }
 .btn:hover::before {
     height: 0%;
